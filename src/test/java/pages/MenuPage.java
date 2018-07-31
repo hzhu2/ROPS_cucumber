@@ -23,10 +23,14 @@ public class MenuPage {
     @FindBy(how = How.XPATH, using = "//span[contains(.,'Place Order')]")
     public WebElement btnPlaceOrder;
 
-    public void PlaceOrder(){
+    public void PickOrder(){
         txtDish1.click();
         txtDish2.click();
         txtDish3.click();
+
+    }
+
+    public void PlaceOrder(){
         btnPlaceOrder.click();
     }
 
