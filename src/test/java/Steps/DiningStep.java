@@ -1,14 +1,13 @@
 package Steps;
 
 import Base.BaseUtil;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import pages.FinalPage;
-import pages.MenuPage;
-import pages.OrderSummaryPage;
-import pages.PaymentPage;
+import Pages.FinalPage;
+import Pages.MenuPage;
+import Pages.OrderSummaryPage;
+import Pages.PaymentPage;
 
 public class DiningStep extends BaseUtil {
     private BaseUtil base;

@@ -1,4 +1,4 @@
-package pages;
+package Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,8 @@ public class FinalPage {
     public void checkSuccess(){
 
         if (successMsg.getText().length() > 0) {System.out.println("Succeed! Everything!");}
-        else {System.out.println("Failed");}
+        else {System.out.println("Failed...");}
+
 
     }
 }
