@@ -1,6 +1,7 @@
 package Steps;
 
 import Base.BaseUtil;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -47,5 +48,11 @@ public class DiningStep extends BaseUtil {
     public void iShouldSeePaymentSuccessfulInfo() throws Throwable {
         FinalPage page = new FinalPage(base.Driver);
         page.checkSuccess();
+    }
+    
+
+    @Given("^I scan the qr code and navigate to the menu pages \"([^\"]*)\"$")
+    public void iScanTheQrCodeAndNavigateToTheMenuPages(String Qrurl) throws Throwable {
+        base.Driver.navigate().to(Qrurl);
     }
 }
